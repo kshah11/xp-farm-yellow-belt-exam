@@ -6,6 +6,15 @@ const TicTacToeBoard = class TicTacToeBoard {
       [' ', ' ', ' '],
     ];
   }
+
+  turn(player) {
+    this.board = [
+      [player, ' ', ' '],
+      [' ', ' ', ' '],
+      [' ', ' ', ' '],
+    ];
+    return this.board;
+  }
 };
 
 module.exports = TicTacToeBoard;
