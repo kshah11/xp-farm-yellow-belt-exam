@@ -1,7 +1,12 @@
 const TicTacToeBoard = require('../src/board');
 
-describe('name of the group', () => {
-  it('should', () => {
-    expect(TicTacToeBoard()).toBe();
+describe('A game of Tic tac toe', () => {
+  it('should start with an empty board', () => {
+    const board = [
+      [' ', ' ', ' '],
+      [' ', ' ', ' '],
+      [' ', ' ', ' '],
+    ];
+    expect(new TicTacToeBoard().board).toEqual(board);
   });
 });

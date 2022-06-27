@@ -10,6 +10,5 @@ TODO:
 
 ✅ Write Domain
 ✅ Refactor file and function names
-
-- Write test to create empty board
-- Write functionality for empty board
+✅ Write test to create empty board
+✅ Write functionality for empty board
