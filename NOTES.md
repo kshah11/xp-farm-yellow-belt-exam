@@ -23,7 +23,11 @@ TODO:
 ✅ Write test for a 3rd turn
 ✅ Write functionality for a 3rd turn
 
-# Pomodor 3
+# Pomodoro 3
 
 ✅ Write a test to simulate a game till the board is filled
-✅ Write functionality to simulate a game
+✅ Write functionality to simulate a game till the board is filled
+✅ Refactor constants out
+
+- Write a test to check for a horizontal win
+- Write functionality to check for a horizontal win

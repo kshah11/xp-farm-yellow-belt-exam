@@ -1,3 +1,5 @@
+const PLAYER_ONE = 'X';
+const PLAYER_TWO = 'O';
 const TicTacToeBoard = class TicTacToeBoard {
   constructor() {
     this.board = [
@@ -20,11 +22,9 @@ const TicTacToeBoard = class TicTacToeBoard {
   }
 
   play() {
-    const playerOne = 'X';
-    const playerTwo = 'O';
     for (let index = 0; index < 9; index += 1) {
-      if (index % 2 === 0) this.turn(playerOne);
-      else this.turn(playerTwo);
+      if (index % 2 === 0) this.turn(PLAYER_ONE);
+      else this.turn(PLAYER_TWO);
     }
     return this.board;
   }
