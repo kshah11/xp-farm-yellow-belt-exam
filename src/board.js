@@ -8,11 +8,8 @@ const TicTacToeBoard = class TicTacToeBoard {
   }
 
   turn(player) {
-    this.board = [
-      [player, ' ', ' '],
-      [' ', ' ', ' '],
-      [' ', ' ', ' '],
-    ];
+    if (this.board[0][0] === ' ') this.board[0][0] = player;
+    else this.board[1][0] = player;
     return this.board;
   }
 };

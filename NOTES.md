@@ -18,6 +18,5 @@ TODO:
 # Pomodoro 2
 
 ✅ Refactor test description
-
-- Write test for the 2nd player to mark the board
-- Write functionality for the 2nd player to mark the board
+✅ Write test for the 2nd player to mark the board
+✅ Write functionality for the 2nd player to mark the board

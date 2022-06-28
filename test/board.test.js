@@ -9,11 +9,18 @@ describe('A game of Tic tac toe', () => {
     ];
     expect(new TicTacToeBoard().board).toEqual(board);
   });
-
+  const board = new TicTacToeBoard();
   test('should have a player mark the board with their symbol', () => {
-    const board = new TicTacToeBoard();
-    const player = 'x';
+    const player = 'X';
 
-    expect(board.turn(player)).toEqual(expect.arrayContaining([expect.arrayContaining(['x'])]));
+    expect(board.turn(player)).toEqual(expect.arrayContaining([expect.arrayContaining(['X'])]));
+  });
+
+  test('should have a second player mark the board their symbol', () => {
+    const player = 'O';
+
+    expect(board.turn(player)).toEqual(
+      expect.arrayContaining([expect.arrayContaining(['O']), expect.arrayContaining(['X'])]),
+    );
   });
 });
