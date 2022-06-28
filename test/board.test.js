@@ -9,10 +9,8 @@ describe('A game of Tic tac toe', () => {
     ];
     expect(new TicTacToeBoard().board).toEqual(board);
   });
-});
 
-describe('The first player', () => {
-  test('should mark the board with an X', () => {
+  test('should have a player mark the board with their symbol', () => {
     const board = new TicTacToeBoard();
     const player = 'x';
 
