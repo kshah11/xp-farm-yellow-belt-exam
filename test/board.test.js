@@ -30,4 +30,9 @@ describe('A game of Tic tac toe', () => {
     const oLength = board.board.flat().filter((mark) => mark === 'O').length;
     expect(xLength).toEqual(oLength + 1);
   });
+
+  test('can end when the board is filled', () => {
+    const gameBoard = new TicTacToeBoard();
+    expect(gameBoard.play()).not.toEqual(expect.arrayContaining([expect.arrayContaining([' '])]));
+  });
 });

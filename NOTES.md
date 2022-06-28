@@ -22,3 +22,8 @@ TODO:
 ✅ Write functionality for the 2nd player to mark the board
 ✅ Write test for a 3rd turn
 ✅ Write functionality for a 3rd turn
+
+# Pomodor 3
+
+✅ Write a test to simulate a game till the board is filled
+✅ Write functionality to simulate a game

@@ -18,6 +18,16 @@ const TicTacToeBoard = class TicTacToeBoard {
     }
     return this.board;
   }
+
+  play() {
+    const playerOne = 'X';
+    const playerTwo = 'O';
+    for (let index = 0; index < 9; index += 1) {
+      if (index % 2 === 0) this.turn(playerOne);
+      else this.turn(playerTwo);
+    }
+    return this.board;
+  }
 };
 
 module.exports = TicTacToeBoard;
