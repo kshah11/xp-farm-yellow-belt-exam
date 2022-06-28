@@ -28,6 +28,5 @@ TODO:
 ✅ Write a test to simulate a game till the board is filled
 ✅ Write functionality to simulate a game till the board is filled
 ✅ Refactor constants out
-
-- Write a test to check for a horizontal win
-- Write functionality to check for a horizontal win
+✅ Write a test to check for a horizontal win
+✅ Write functionality to check for a horizontal win

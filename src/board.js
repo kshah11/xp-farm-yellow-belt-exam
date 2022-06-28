@@ -28,6 +28,16 @@ const TicTacToeBoard = class TicTacToeBoard {
     }
     return this.board;
   }
+
+  results() {
+    for (let index = 0; index < this.board.length; index += 1) {
+      const { length } = this.board[index].filter((mark) => mark === PLAYER_ONE);
+      if (length === 3) {
+        return `${PLAYER_ONE} wins`;
+      }
+    }
+    return '';
+  }
 };
 
 module.exports = TicTacToeBoard;

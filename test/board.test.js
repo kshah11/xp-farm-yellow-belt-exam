@@ -36,3 +36,15 @@ describe('A game of Tic tac toe', () => {
     expect(gameBoard.play()).not.toEqual(expect.arrayContaining([expect.arrayContaining([' '])]));
   });
 });
+
+describe('A player wins the game', () => {
+  test('if they mark the board with their symbol 3 times in a row', () => {
+    const gameBoard = new TicTacToeBoard();
+    gameBoard.board = [
+      ['X', 'X', 'X'],
+      ['O', ' ', 'O'],
+      [' ', 'O', ' '],
+    ];
+    expect(gameBoard.results()).toEqual('X wins');
+  });
+});
