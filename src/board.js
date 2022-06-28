@@ -8,8 +8,14 @@ const TicTacToeBoard = class TicTacToeBoard {
   }
 
   turn(player) {
-    if (this.board[0][0] === ' ') this.board[0][0] = player;
-    else this.board[1][0] = player;
+    while (true) {
+      const row = Math.floor(Math.random() * 3);
+      const column = Math.floor(Math.random() * 3);
+      if (this.board[row][column] === ' ') {
+        this.board[row][column] = player;
+        break;
+      }
+    }
     return this.board;
   }
 };

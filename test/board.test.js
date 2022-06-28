@@ -23,4 +23,11 @@ describe('A game of Tic tac toe', () => {
       expect.arrayContaining([expect.arrayContaining(['O']), expect.arrayContaining(['X'])]),
     );
   });
+  test('should have the two Xs and one O after 3 truns have passed', () => {
+    const player = 'X';
+    board.turn(player);
+    const xLength = board.board.flat().filter((mark) => mark === 'X').length;
+    const oLength = board.board.flat().filter((mark) => mark === 'O').length;
+    expect(xLength).toEqual(oLength + 1);
+  });
 });

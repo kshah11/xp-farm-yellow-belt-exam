@@ -20,3 +20,5 @@ TODO:
 ✅ Refactor test description
 ✅ Write test for the 2nd player to mark the board
 ✅ Write functionality for the 2nd player to mark the board
+✅ Write test for a 3rd turn
+✅ Write functionality for a 3rd turn
