@@ -38,6 +38,6 @@ TODO:
 ✅ Write a test for a draw
 ✅ Write functionality for a draw
 ✅ Refactor code
-
-- Write a test to check for a diagonal win - top left to bottom right
-- Write functionality to check for a diagonal win - top left to bottom right
+✅ Write a test to check for a diagonal win - top left to bottom right
+✅ Write functionality to check for a diagonal win - top left to bottom right
+✅ Fix failing test

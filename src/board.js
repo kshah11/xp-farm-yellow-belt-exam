@@ -30,6 +30,9 @@ const TicTacToeBoard = class TicTacToeBoard {
   }
 
   results() {
+    if (this.board[0][0] === this.board[1][1] && this.board[1][1] === this.board[2][2]) {
+      return `${this.board[0][0]} wins`;
+    }
     for (let index = 0; index < this.board.length; index += 1) {
       if (
         this.board[index][0] === this.board[index][1] &&

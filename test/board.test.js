@@ -38,8 +38,8 @@ describe('A game of Tic tac toe', () => {
   test('ends in a draw if no player marks the board with their symbol 3 times in a row', () => {
     const gameBoard = new TicTacToeBoard();
     gameBoard.board = [
-      ['X', 'O', 'X'],
       ['O', 'X', 'O'],
+      ['X', 'X', 'O'],
       ['X', 'O', 'X'],
     ];
     expect(gameBoard.results()).toEqual('Draw');
@@ -64,5 +64,16 @@ describe('A player wins the game', () => {
       [' ', 'O', 'X'],
     ];
     expect(gameBoard.results()).toEqual('O wins');
+  });
+  describe('if they mark the board with their symbol 3 times diagonally', () => {
+    test('from top left to bottom right', () => {
+      const gameBoard = new TicTacToeBoard();
+      gameBoard.board = [
+        ['X', 'O', 'X'],
+        ['', 'X', 'O'],
+        [' ', 'O', 'X'],
+      ];
+      expect(gameBoard.results()).toEqual('X wins');
+    });
   });
 });
