@@ -35,6 +35,15 @@ describe('A game of Tic tac toe', () => {
     const gameBoard = new TicTacToeBoard();
     expect(gameBoard.play()).not.toEqual(expect.arrayContaining([expect.arrayContaining([' '])]));
   });
+  test('ends in a draw if no player marks the board with their symbol 3 times in a row', () => {
+    const gameBoard = new TicTacToeBoard();
+    gameBoard.board = [
+      ['X', 'O', 'X'],
+      ['O', 'X', 'O'],
+      ['X', 'O', 'X'],
+    ];
+    expect(gameBoard.results()).toEqual('Draw');
+  });
 });
 
 describe('A player wins the game', () => {
@@ -46,5 +55,14 @@ describe('A player wins the game', () => {
       [' ', 'O', ' '],
     ];
     expect(gameBoard.results()).toEqual('X wins');
+  });
+  test('if they mark the board with their symbol 3 times in a column', () => {
+    const gameBoard = new TicTacToeBoard();
+    gameBoard.board = [
+      ['X', 'O', 'X'],
+      ['X', 'O', 'O'],
+      [' ', 'O', 'X'],
+    ];
+    expect(gameBoard.results()).toEqual('O wins');
   });
 });

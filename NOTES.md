@@ -30,3 +30,14 @@ TODO:
 ✅ Refactor constants out
 ✅ Write a test to check for a horizontal win
 ✅ Write functionality to check for a horizontal win
+
+# Pomodoro 4
+
+✅ Write a test to check for a vertical win
+✅ Write functionality to check for a vertical win
+✅ Write a test for a draw
+✅ Write functionality for a draw
+✅ Refactor code
+
+- Write a test to check for a diagonal win - top left to bottom right
+- Write functionality to check for a diagonal win - top left to bottom right

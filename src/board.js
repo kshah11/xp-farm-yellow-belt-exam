@@ -31,12 +31,20 @@ const TicTacToeBoard = class TicTacToeBoard {
 
   results() {
     for (let index = 0; index < this.board.length; index += 1) {
-      const { length } = this.board[index].filter((mark) => mark === PLAYER_ONE);
-      if (length === 3) {
-        return `${PLAYER_ONE} wins`;
+      if (
+        this.board[index][0] === this.board[index][1] &&
+        this.board[index][1] === this.board[index][2]
+      ) {
+        return `${this.board[index][0]} wins`;
+      }
+      if (
+        this.board[0][index] === this.board[1][index] &&
+        this.board[1][index] === this.board[2][index]
+      ) {
+        return `${this.board[0][index]} wins`;
       }
     }
-    return '';
+    return 'Draw';
   }
 };
 
